@@ -1,0 +1,76 @@
+{
+    "User": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "User",
+        "description": "User",
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer",
+                "minimum": 0,
+                "exclusiveMinimum": false
+            },
+            "name": {
+                "type": "string"
+            },
+            "devices": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+            }
+        },
+        "required": [
+            "id",
+            "name",
+            "devices"
+        ]
+    },
+    "Device": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "Device",
+        "description": "Device",
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer",
+                "minimum": 0,
+                "exclusiveMinimum": false
+            },
+            "name": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "id",
+            "name"
+        ]
+    },
+    "Ad": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "Ad",
+        "description": "Ad",
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer",
+                "minimum": 0,
+                "exclusiveMinimum": false
+            },
+            "name": {
+                "type": "string"
+            },
+            "user_id": {
+                "type": "integer",
+                "minimum": 0,
+                "exclusiveMinimum": false
+            }
+        },
+        "required": [
+            "id",
+            "name",
+            "user_id"
+        ]
+    }
+}

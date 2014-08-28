@@ -1,0 +1,7 @@
+xsd_directory: xsd
+json_scheme_output: json
+db_type: mysql
+db_host: localhost
+db_port: 3306
+db_username: root
+db_password: root

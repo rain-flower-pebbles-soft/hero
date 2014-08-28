@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="models">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="User" type="User" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Device" type="Device" minOccurs="0"/>
+                <xs:element name="Ad" type="Ad" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="User">
+        <xs:sequence>
+            <xs:element name="id" type="xs:nonNegativeInteger"/>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Device">
+        <xs:sequence>
+            <xs:element name="id" type="xs:nonNegativeInteger"/>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Ad">
+        <xs:sequence>
+            <xs:element name="id" type="xs:nonNegativeInteger"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="user_id" type="xs:nonNegativeInteger"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
