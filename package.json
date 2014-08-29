@@ -27,7 +27,9 @@
     "swig": "1.4.1",
     "tap": "^0.4.12",
     "tv4": "^1.1.0",
-    "warehouse": "0.2.2"
+    "warehouse": "0.2.2",
+    "sequelize": "~1.7.9",
+    "optimist": "~0.6.1"
   },
   "devDependencies": {
     "mocha": "^1.20.1",
